@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String [] args) {
-        System.out.println("Enter your name: ");
+        System.out.println("Enter your grade: ");
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!");
+        int grade = scanner.nextInt();
+        if(grade > 90) {
+            System.out.println("Wow! You did well!");
+        } else {
+            System.out.println("Not bad, but you can do better next time!");
+        }
+
     }
 }
